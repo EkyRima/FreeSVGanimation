@@ -14,12 +14,6 @@ const headerArea = `
 const sidebarArea = `
 <div class="ads-box">[Ruang Iklan Sidebar AdSense]</div>
 
-<h3>Visitor Counter</h3>
-<div style="text-align:center; margin-bottom: 20px;">
-    <!-- Ini API Visitor Counter Gratis yang akan bertambah otomatis -->
-    <img src="https://profile-counter.glitch.me/ekyrimanurya/count.svg" alt="Visitor Count" />
-</div>
-
 <h3 id="galeri">Galeri Animasi Terbaru</h3>
 <a href="index.html" class="gallery-item">
     <div class="thumb" style="background: #0f172a;"></div>
