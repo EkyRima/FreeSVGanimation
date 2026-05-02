@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NAMA SITUS SEO TERBAIK -->
+    <title>Meja Kerja Super Immersive Futuristik - Animasi SVG Loop 5 Detik | Free SVG Lottie Vector</title>
+    <meta name="description" content="Download animasi meja kerja futuristik super immersive format SVG dan WebM. 60FPS, loop 5 detik, resolusi 4K. Karya asli Eky Rima Nurya Ganda.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/webm-muxer/build/webm-muxer.js"></script>
+</head>
+<body>
+
+    <!-- Header otomatis dari layout.js -->
+    <header id="header-section"></header>
+
+    <div class="main-wrapper">
+        <main class="content-box">
+            <h1>Animasi: Meja Kerja Super Immersive Futuristik (Loop 5 Detik)</h1>
+            <p style="color: #64748b;">Oleh: Eky Rima Nurya Ganda | Ukuran: 4 KB | Format: SVG & WebM</p>
+
+            <div class="ads-box">[Slot Iklan AdSense - In Article]</div>
+
+            <!-- AREA SHOWCASE ANIMASI -->
+            <div class="showcase" id="showcaseArea">
+                <svg id="targetSVG" viewBox="0 0 1920 1080" style="width: 100%; height: auto; max-width: 800px; display: block; margin: 0 auto;">
+                    <style>
+                        .neon-cyan { stroke: #00f2fe; fill: none; stroke-linecap: round; }
+                        .neon-blue { stroke: #4facfe; fill: none; stroke-linecap: round; }
+                        .neon-purple { stroke: #b026ff; fill: none; stroke-linecap: round; }
+                        .fill-cyan { fill: rgba(0, 242, 254, 0.1); stroke: #00f2fe; stroke-width: 4; }
+                        
+                        /* Animasi Keyframes */
+                        @keyframes scan { 
+                            0% { transform: translateY(0); opacity: 0; } 
+                            10% { opacity: 1; } 
+                            90% { opacity: 1; } 
+                            100% { transform: translateY(480px); opacity: 0; } 
+                        }
+                        @keyframes rotate-radar { 100% { transform: rotate(360deg); } }
+                        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+                        .scan-line { animation: scan 2.5s linear infinite; }
+                        .radar { transform-origin: 960px 475px; animation: rotate-radar 5s linear infinite; }
+                        .data-bar { animation: blink 1.25s ease-in-out infinite alternate; }
+                    </style>
+                    
+                    <!-- Meja Hologram -->
+                    <path class="neon-blue" d="M 200 1000 L 1720 1000 L 1400 800 L 520 800 Z" style="fill: rgba(79, 172, 254, 0.05); stroke-width: 12; stroke-linejoin: round;" />
+                    
+                    <!-- Tiang Penyangga Layar -->
+                    <path class="neon-blue" d="M 920 750 L 1000 750 L 1020 800 L 900 800 Z" style="stroke-width: 8; stroke-linejoin: round;" />
+                    
+                    <!-- Layar Monitor -->
+                    <rect class="fill-cyan" x="460" y="200" width="1000" height="550" rx="20" />
+                    
+                    <!-- UI Dalam Layar -->
+                    <!-- Radar Tengah -->
+                    <circle class="neon-purple" cx="960" cy="475" r="150" stroke-width="8" stroke-dasharray="20 15 50 15" />
+                    <circle class="neon-cyan radar" cx="960" cy="475" r="120" stroke-width="12" stroke-dasharray="100 100" />
+                    <circle class="neon-blue radar" cx="960" cy="475" r="80" stroke-width="8" stroke-dasharray="40 40" style="animation-direction: reverse; animation-duration: 2.5s;" />
+                    
+                    <!-- Grafik Batang Kiri -->
+                    <line class="neon-cyan data-bar" x1="550" y1="600" x2="550" y2="300" stroke-width="8" stroke-dasharray="20 20" style="animation-delay: 0s;" />
+                    <line class="neon-purple data-bar" x1="600" y1="600" x2="600" y2="400" stroke-width="8" stroke-dasharray="20 20" style="animation-delay: 0.3s;" />
+                    <line class="neon-blue data-bar" x1="650" y1="600" x2="650" y2="350" stroke-width="8" stroke-dasharray="20 20" style="animation-delay: 0.6s;" />
+
+                    <!-- Baris Kode Kanan -->
+                    <path class="neon-cyan" d="M 1250 300 L 1400 300 M 1250 350 L 1350 350 M 1250 400 L 1380 400 M 1250 450 L 1320 450" style="stroke-width: 6;" />
+                    
+                    <!-- Garis Scanner Vertikal -->
+                    <line class="neon-purple scan-line" x1="480" y1="220" x2="1440" y2="220" stroke-width="4" />
+                </svg>
+                <canvas id="renderCanvas" style="display:none; width: 100%; max-width: 800px;"></canvas>
+            </div>
+            
+            <p id="renderStatus" style="display:none; color: var(--primary); font-weight:bold; text-align:center;">Memulai Render Frame-by-Frame...</p>
+
+            <!-- KONTROL -->
+            <div class="controls">
+                <label style="font-weight:bold; margin-right:auto;"><input type="checkbox" id="alphaToggle"> Background Transparan</label>
+                <button class="btn btn-svg" onclick="downloadSVG()">Unduh .SVG</button>
+                <button class="btn btn-1080" onclick="startRender('1080p')">Render WebM 1080p</button>
+                <button class="btn btn-4k" onclick="startRender('4k')">Render WebM 4K</button>
+            </div>
+
+            <!-- ARTIKEL SEO UNTUK ADSENSE -->
+            <h2>Meja Kerja Super Immersive Futuristik dengan Animasi SVG Loop Intens Keren Menakjubkan Berdurasi 5 Detik</h2>
+            <p>Selamat datang kembali di situs <strong>Free SVG Lottie Vector Motion Graphic for Download</strong>. Sebagai developer dan desainer antarmuka, saya (Eky Rima Nurya Ganda) sangat antusias mempersembahkan mahakarya visual terbaru kami: animasi meja kerja super immersive bergaya futuristik. Karya ini dirancang dengan elemen <em>cyberpunk</em> dan teknologi tinggi (sci-fi), menampilkan detail radar berputar, indikator data yang berkedip responsif, serta garis pemindai (scanner) yang terus menyisir secara mulus. Keunggulan utamanya terletak pada durasi loop 5 detik penuh yang dibuat secara intens, keren, dan menakjubkan, menjadikannya opsi ideal untuk latar belakang (backdrop) video, <em>overlay</em> live streaming OBS, maupun layar tunggu (standby screen) untuk turnamen e-sports.</p>
+
+            <div class="ads-box">[Slot Iklan AdSense - In Article]</div>
+
+            <h2>Kenapa Menggunakan Format SVG Dibandingkan MP4?</h2>
+            <p>Di era digital modern, efisiensi adalah segalanya. Render animasi beresolusi 4K UHD dalam format MP4 konvensional umumnya memakan ukuran file hingga puluhan, bahkan ratusan Megabyte. Hal tersebut tentu akan sangat membebani kecepatan pemuatan halaman web Anda. Sebaliknya, grafik vektor bergerak (Vector Motion Graphics) ini dibangun 100% menggunakan kode murni SVG dan CSS. Dampaknya? Ukuran file yang diunduh dari situs ini hanya sekitar 4 KB saja! Resolusinya akan menyesuaikan skala layar apa pun—mulai dari smartphone hingga televisi 8K—tanpa khawatir sedikitpun akan pecah atau buram (*pixelated*).</p>
+
+            <h2>Kemampuan Rendering Video Mandiri Tanpa Beban Server</h2>
+            <p>Bagaimana jika Anda ingin memasukkan aset ini ke aplikasi *editing* video profesional seperti Adobe Premiere Pro, DaVinci Resolve, atau Final Cut Pro? Kami memahami kebutuhan itu! Oleh karena itu, kami menanamkan teknologi <em>WebCodecs API</em> mutakhir ke dalam situs ini. Saat Anda menekan tombol "Render WebM", browser yang Anda gunakan akan merakit video secara <em>frame-by-frame</em> langsung dari perangkat keras komputer atau ponsel Anda pada framerate 60 FPS. Proses ini tidak memerlukan kuota internet untuk mendownload file video dari server kami, sehingga menjaga privasi dan menghemat bandwidth data secara drastis.</p>
+            
+            <p>Karya grafis ini dapat Anda unduh dan pergunakan sepenuhnya secara gratis baik untuk proyek komersial maupun pribadi tanpa perlu lisensi rumit. Nikmati nuansa ruang kerja digital futuristik di proyek kreatif Anda hari ini juga!</p>
+
+            <div class="ads-box">[Slot Iklan AdSense - Bottom]</div>
+
+            <!-- KOLOM KOMENTAR (Disqus) -->
+            <h2 style="margin-top: 40px;">Kolom Komentar</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () { this.page.url = window.location.href; this.page.identifier = "futuristic-desk"; };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://situs-ekymotion.disqus.com/embed.js'; // <- GANTI URL INI NANTI
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+        </main>
+
+        <!-- Sidebar otomatis dari layout.js -->
+        <aside class="sidebar" id="sidebar-section"></aside>
+    </div>
+
+    <!-- Footer otomatis dari layout.js -->
+    <footer id="footer-section"></footer>
+
+    <!-- SCRIPT LAYOUT & RENDER ENGINE (JANGAN DIHAPUS) -->
+    <script src="layout.js"></script>
+    <script>
+        // Logika Alpha & Unduh SVG
+        const alphaToggle = document.getElementById('alphaToggle');
+        alphaToggle.addEventListener('change', e => document.getElementById('showcaseArea').classList.toggle('alpha', e.target.checked));
+        
+        function downloadSVG() {
+            let svgNode = document.getElementById('targetSVG').cloneNode(true);
+            if(!alphaToggle.checked) {
+                let bg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                bg.setAttribute("width", "100%"); bg.setAttribute("height", "100%"); bg.setAttribute("fill", "#0f172a");
+                svgNode.insertBefore(bg, svgNode.firstChild);
+            }
+            // Mengatur viewBox dan Size
+            svgNode.setAttribute("width", "1920"); svgNode.setAttribute("height", "1080");
+            const src = '<?xml version="1.0" standalone="no"?>\r\n' + new XMLSerializer().serializeToString(svgNode);
+            const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([src], {type: "image/svg+xml"}));
+            a.download = "ekymotion-mejakerja-futuristik.svg"; document.body.appendChild(a); a.click();
+        }
+
+        const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+        // Algoritma Render Frame-by-Frame untuk WebCodecs
+        function drawAnimationLogic(ctx, timeSec, virtualW, virtualH) {
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+
+            // 1. Meja Hologram
+            ctx.beginPath();
+            ctx.moveTo(200, 1000); ctx.lineTo(1720, 1000); ctx.lineTo(1400, 800); ctx.lineTo(520, 800); ctx.closePath();
+            ctx.fillStyle = 'rgba(79, 172, 254, 0.05)'; ctx.fill();
+            ctx.strokeStyle = '#4facfe'; ctx.lineWidth = 12; ctx.stroke();
+
+            // 2. Tiang Penyangga
+            ctx.beginPath();
+            ctx.moveTo(920, 750); ctx.lineTo(1000, 750); ctx.lineTo(1020, 800); ctx.lineTo(900, 800); ctx.closePath();
+            ctx.strokeStyle = '#4facfe'; ctx.lineWidth = 8; ctx.stroke();
+
+            // 3. Layar Monitor (Menggunakan cara manual untuk kompatibilitas browser absolut)
+            const rx = 460, ry = 200, rw = 1000, rh = 550, rr = 20;
+            ctx.beginPath();
+            ctx.moveTo(rx + rr, ry);
+            ctx.lineTo(rx + rw - rr, ry);
+            ctx.arcTo(rx + rw, ry, rx + rw, ry + rr, rr);
+            ctx.lineTo(rx + rw, ry + rh - rr);
+            ctx.arcTo(rx + rw, ry + rh, rx + rw - rr, ry + rh, rr);
+            ctx.lineTo(rx + rr, ry + rh);
+            ctx.arcTo(rx, ry + rh, rx, ry + rh - rr, rr);
+            ctx.lineTo(rx, ry + rr);
+            ctx.arcTo(rx, ry, rx + rr, ry, rr);
+            ctx.closePath();
+            ctx.fillStyle = 'rgba(0, 242, 254, 0.1)'; ctx.fill();
+            ctx.strokeStyle = '#00f2fe'; ctx.lineWidth = 4; ctx.stroke();
+
+            const cx = 960, cy = 475;
+
+            // 4. UI Radar Berputar
+            ctx.save();
+            ctx.translate(cx, cy);
+            
+            // Radar Terluar (Statis)
+            ctx.beginPath(); ctx.arc(0, 0, 150, 0, Math.PI * 2);
+            ctx.strokeStyle = '#b026ff'; ctx.lineWidth = 8;
+            ctx.setLineDash([20, 15, 50, 15]); ctx.stroke();
+
+            // Radar Tengah (Animasi 5 detik searah jarum jam)
+            ctx.save();
+            ctx.rotate((timeSec / 5) * Math.PI * 2);
+            ctx.beginPath(); ctx.arc(0, 0, 120, 0, Math.PI * 2);
+            ctx.strokeStyle = '#00f2fe'; ctx.lineWidth = 12;
+            ctx.setLineDash([100, 100]); ctx.stroke();
+            ctx.restore();
+
+            // Radar Dalam (Animasi 2.5 detik berlawanan jarum jam)
+            ctx.save();
+            ctx.rotate(-(timeSec / 2.5) * Math.PI * 2);
+            ctx.beginPath(); ctx.arc(0, 0, 80, 0, Math.PI * 2);
+            ctx.strokeStyle = '#4facfe'; ctx.lineWidth = 8;
+            ctx.setLineDash([40, 40]); ctx.stroke();
+            ctx.restore();
+            
+            ctx.restore();
+
+            // 5. Grafik Batang Berkedip Kiri (Siklus penuh 2.5s -> alternate blink)
+            ctx.lineWidth = 8;
+            ctx.setLineDash([20, 20]);
+            const getBlink = (delay) => {
+                let phase = ((timeSec - delay) % 2.5) / 2.5; 
+                if (phase < 0) phase += 1;
+                // Matematika Cosine Wave agar menyamai ease-in-out CSS
+                let norm = (Math.cos(phase * Math.PI * 2) + 1) / 2;
+                return 0.3 + 0.7 * norm;
+            };
+
+            ctx.strokeStyle = `rgba(0, 242, 254, ${getBlink(0)})`;
+            ctx.beginPath(); ctx.moveTo(550, 600); ctx.lineTo(550, 300); ctx.stroke();
+
+            ctx.strokeStyle = `rgba(176, 38, 255, ${getBlink(0.3)})`;
+            ctx.beginPath(); ctx.moveTo(600, 600); ctx.lineTo(600, 400); ctx.stroke();
+
+            ctx.strokeStyle = `rgba(79, 172, 254, ${getBlink(0.6)})`;
+            ctx.beginPath(); ctx.moveTo(650, 600); ctx.lineTo(650, 350); ctx.stroke();
+
+            // 6. Baris Kode Kanan
+            ctx.setLineDash([]);
+            ctx.strokeStyle = '#00f2fe'; ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.moveTo(1250, 300); ctx.lineTo(1400, 300);
+            ctx.moveTo(1250, 350); ctx.lineTo(1350, 350);
+            ctx.moveTo(1250, 400); ctx.lineTo(1380, 400);
+            ctx.moveTo(1250, 450); ctx.lineTo(1320, 450);
+            ctx.stroke();
+
+            // 7. Garis Scanner Bergerak Vertikal (Loop 2.5 detik)
+            let scanProgress = (timeSec % 2.5) / 2.5; 
+            let scanY = 220 + (scanProgress * 480);
+            let scanOpacity = 1;
+            
+            // Fade-in dan Fade-out di ujung pergerakan
+            if (scanProgress < 0.1) scanOpacity = scanProgress / 0.1;
+            else if (scanProgress > 0.9) scanOpacity = (1 - scanProgress) / 0.1;
+
+            ctx.strokeStyle = `rgba(176, 38, 255, ${scanOpacity})`;
+            ctx.lineWidth = 4;
+            ctx.beginPath(); ctx.moveTo(480, scanY); ctx.lineTo(1440, scanY); ctx.stroke();
+        }
+
+        async function startRender(quality) {
+            const isAlpha = alphaToggle.checked;
+            const w = quality === '4k' ? 3840 : 1920, h = quality === '4k' ? 2160 : 1080;
+            const multiplier = quality === '4k' ? 2 : 1;
+            
+            document.getElementById('targetSVG').style.display = 'none';
+            const canvas = document.getElementById('renderCanvas'); canvas.style.display = 'block';
+            const status = document.getElementById('renderStatus'); status.style.display = 'block';
+            canvas.width = w; canvas.height = h;
+            const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+            try {
+                let muxer = new WebMMuxer.Muxer({ target: new WebMMuxer.ArrayBufferTarget(), video: { codec: 'V_VP9', width: w, height: h, frameRate: 60, alpha: isAlpha }});
+                let encoder = new VideoEncoder({ output: (chunk, meta) => muxer.addVideoChunk(chunk, meta), error: e => console.error(e) });
+                encoder.configure({ codec: 'vp09.00.10.08', width: w, height: h, bitrate: quality === '4k' ? 30_000_000 : 12_000_000, framerate: 60, alpha: isAlpha ? 'keep' : 'discard' });
+
+                // Loop Animasi 5 Detik = 300 Frame (di 60 FPS)
+                for (let f = 0; f < 300; f++) { 
+                    while (encoder.encodeQueueSize > 2) await sleep(50);
+                    if (!isAlpha) { ctx.fillStyle = '#0f172a'; ctx.fillRect(0,0,w,h); } else ctx.clearRect(0,0,w,h);
+                    
+                    ctx.save(); ctx.scale(multiplier, multiplier);
+                    drawAnimationLogic(ctx, f/60, 1920, 1080);
+                    ctx.restore();
+
+                    const frame = new VideoFrame(canvas, { timestamp: (f/60) * 1e6 });
+                    encoder.encode(frame, { keyFrame: f%60 === 0 }); frame.close(); await sleep(30);
+                    status.innerText = `Rendering Visual Live: Frame ${f+1}/300 (${Math.round((f+1)/300*100)}%)`;
+                }
+                status.innerText = "Finalisasi Video Muxing (Mengemas Format File)...";
+                await encoder.flush(); muxer.finalize(); encoder.close();
+                
+                const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([muxer.target.buffer], {type: 'video/webm'}));
+                a.download = `EkyMotion-MejaKerja-${quality}.webm`; a.click();
+            } catch (err) { alert("Error: " + err.message); } 
+            finally { document.getElementById('targetSVG').style.display = 'block'; canvas.style.display = 'none'; status.style.display = 'none'; }
+        }
+    </script>
+</body>
+</html>
