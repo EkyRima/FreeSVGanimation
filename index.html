@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NAMA SITUS SEO TERBAIK -->
+    <title>Neon Dual Ring Loader | Free SVG Lottie Vector Motion Graphic for Download</title>
+    <meta name="description" content="Situs penyedia animasi SVG dan WebM gratis. Render 4K langsung dari browser Anda tanpa lisensi. Dibuat oleh Eky Rima Nurya Ganda.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/webm-muxer/build/webm-muxer.js"></script>
+</head>
+<body>
+
+    <!-- Header otomatis dari layout.js -->
+    <header id="header-section"></header>
+
+    <div class="main-wrapper">
+        <main class="content-box">
+            <h1>Animasi Loader: Neon Dual Ring</h1>
+            <p style="color: #64748b;">Oleh: Eky Rima Nurya | Ukuran: 2 KB | Format: SVG & WebM</p>
+
+            <div class="ads-box">[Slot Iklan AdSense - In Article]</div>
+
+            <!-- AREA SHOWCASE ANIMASI -->
+            <div class="showcase" id="showcaseArea">
+                <svg id="targetSVG" viewBox="0 0 100 100" style="width: 120px; animation: rotateBase 3s linear infinite;">
+                    <style>
+                        .r-out { stroke: #00f2fe; stroke-dasharray: 150; animation: spO 2s ease-in-out infinite alternate; fill:none; stroke-width:8; stroke-linecap:round;}
+                        .r-in { stroke: #4facfe; stroke-dasharray: 100; stroke-dashoffset: 50; animation: spI 1.5s linear infinite; transform-origin: center; fill:none; stroke-width:8; stroke-linecap:round;}
+                        @keyframes rotateBase { 100% { transform: rotate(360deg); } }
+                        @keyframes spO { 100% { stroke-dashoffset: 0; } }
+                        @keyframes spI { 100% { transform: rotate(-360deg); } }
+                    </style>
+                    <circle class="r-out" cx="50" cy="50" r="40" />
+                    <circle class="r-in" cx="50" cy="50" r="25" />
+                </svg>
+                <canvas id="renderCanvas" style="display:none;"></canvas>
+            </div>
+            
+            <p id="renderStatus" style="display:none; color: var(--primary); font-weight:bold; text-align:center;">Memulai Render Frame-by-Frame...</p>
+
+            <!-- KONTROL -->
+            <div class="controls">
+                <label style="font-weight:bold; margin-right:auto;"><input type="checkbox" id="alphaToggle"> Background Transparan</label>
+                <button class="btn btn-svg" onclick="downloadSVG()">Unduh .SVG</button>
+                <button class="btn btn-1080" onclick="startRender('1080p')">Render WebM 1080p</button>
+                <button class="btn btn-4k" onclick="startRender('4k')">Render WebM 4K</button>
+            </div>
+
+            <!-- ARTIKEL SEO UNTUK ADSENSE -->
+            <h2>Deskripsi Karya Vector Motion</h2>
+            <p>Selamat datang di situs <strong>Free SVG Lottie Vector Motion Graphic for Download</strong>. Sebagai developer, saya (Eky Rima Nurya Ganda) memahami pentingnya aset visual yang cepat dan ringan. Animasi Neon Dual Ring ini dibuat menggunakan murni SVG dan CSS. Berbeda dengan video MP4 berukuran besar, format SVG ini tidak akan memperlambat loading situs web Anda.</p>
+
+            <h2>Teknologi Render Client-Side Kami</h2>
+            <p>Jika Anda memerlukan format video untuk kebutuhan Adobe Premiere atau presentasi, Anda bisa mengunduhnya secara langsung. Situs ini menggunakan teknologi canggih <em>WebCodecs API</em>. Saat Anda menekan tombol Render WebM, peramban Anda (Chrome/Safari) akan merakit video secara mandiri dari perangkat Anda, menjamin kualitas 4K UHD tanpa perlu menghabiskan kuota internet untuk mendownload file dari server.</p>
+            
+            <div class="ads-box">[Slot Iklan AdSense - Bottom]</div>
+
+            <!-- KOLOM KOMENTAR (Disqus) -->
+            <h2 style="margin-top: 40px;">Kolom Komentar</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                // Ganti "nama-situs-anda" dengan username Disqus yang nanti Anda buat
+                var disqus_config = function () { this.page.url = window.location.href; this.page.identifier = "neon-ring"; };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://situs-ekymotion.disqus.com/embed.js'; // <- GANTI URL INI NANTI
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+        </main>
+
+        <!-- Sidebar otomatis dari layout.js -->
+        <aside class="sidebar" id="sidebar-section"></aside>
+    </div>
+
+    <!-- Footer otomatis dari layout.js -->
+    <footer id="footer-section"></footer>
+
+    <!-- SCRIPT LAYOUT & RENDER ENGINE (JANGAN DIHAPUS) -->
+    <script src="layout.js"></script>
+    <script>
+        // Logika Alpha & Unduh SVG
+        const alphaToggle = document.getElementById('alphaToggle');
+        alphaToggle.addEventListener('change', e => document.getElementById('showcaseArea').classList.toggle('alpha', e.target.checked));
+        
+        function downloadSVG() {
+            let svgNode = document.getElementById('targetSVG').cloneNode(true);
+            if(!alphaToggle.checked) {
+                let bg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                bg.setAttribute("width", "100%"); bg.setAttribute("height", "100%"); bg.setAttribute("fill", "#0f172a");
+                svgNode.insertBefore(bg, svgNode.firstChild);
+            }
+            svgNode.setAttribute("width", "800"); svgNode.setAttribute("height", "800");
+            const src = '<?xml version="1.0" standalone="no"?>\r\n' + new XMLSerializer().serializeToString(svgNode);
+            const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([src], {type: "image/svg+xml"}));
+            a.download = "ekymotion-animasi.svg"; document.body.appendChild(a); a.click();
+        }
+
+        const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+        // TUGAS AI NANTI: Modifikasi fungsi ini untuk animasi lainnya
+        function drawAnimationLogic(ctx, timeSec, virtualW, virtualH) {
+            const cx = virtualW/2, cy = virtualH/2;
+            ctx.save(); ctx.translate(cx, cy); ctx.rotate((timeSec/3) * Math.PI*2);
+            
+            ctx.beginPath(); ctx.arc(0,0, 320, 0, Math.PI*2);
+            ctx.strokeStyle='#00f2fe'; ctx.lineWidth=64; ctx.lineCap='round';
+            ctx.setLineDash([1200,1200]); ctx.lineDashOffset = (150 - (Math.sin(timeSec*Math.PI)*75+75)) * 8; ctx.stroke();
+
+            ctx.rotate(-(timeSec/1.5) * Math.PI*2);
+            ctx.beginPath(); ctx.arc(0,0, 200, 0, Math.PI*2);
+            ctx.strokeStyle='#4facfe'; ctx.lineWidth=64; ctx.setLineDash([800,800]); ctx.lineDashOffset=400; ctx.stroke();
+            ctx.restore();
+        }
+
+        async function startRender(quality) {
+            const isAlpha = alphaToggle.checked;
+            const w = quality === '4k' ? 3840 : 1920, h = quality === '4k' ? 2160 : 1080;
+            const multiplier = quality === '4k' ? 2 : 1;
+            
+            document.getElementById('targetSVG').style.display = 'none';
+            const canvas = document.getElementById('renderCanvas'); canvas.style.display = 'block';
+            const status = document.getElementById('renderStatus'); status.style.display = 'block';
+            canvas.width = w; canvas.height = h;
+            const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+            try {
+                let muxer = new WebMMuxer.Muxer({ target: new WebMMuxer.ArrayBufferTarget(), video: { codec: 'V_VP9', width: w, height: h, frameRate: 60, alpha: isAlpha }});
+                let encoder = new VideoEncoder({ output: (chunk, meta) => muxer.addVideoChunk(chunk, meta), error: e => console.error(e) });
+                encoder.configure({ codec: 'vp09.00.10.08', width: w, height: h, bitrate: quality === '4k' ? 30_000_000 : 12_000_000, framerate: 60, alpha: isAlpha ? 'keep' : 'discard' });
+
+                for (let f = 0; f < 180; f++) { // 3 detik * 60 FPS = 180 Frame
+                    while (encoder.encodeQueueSize > 2) await sleep(50);
+                    if (!isAlpha) { ctx.fillStyle = '#0f172a'; ctx.fillRect(0,0,w,h); } else ctx.clearRect(0,0,w,h);
+                    
+                    ctx.save(); ctx.scale(multiplier, multiplier);
+                    drawAnimationLogic(ctx, f/60, 1920, 1080);
+                    ctx.restore();
+
+                    const frame = new VideoFrame(canvas, { timestamp: (f/60) * 1e6 });
+                    encoder.encode(frame, { keyFrame: f%60 === 0 }); frame.close(); await sleep(30);
+                    status.innerText = `Rendering Visual Live: Frame ${f+1}/180 (${Math.round((f+1)/180*100)}%)`;
+                }
+                status.innerText = "Finalisasi Video Muxing...";
+                await encoder.flush(); muxer.finalize(); encoder.close();
+                
+                const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([muxer.target.buffer], {type: 'video/webm'}));
+                a.download = `EkyMotion-${quality}.webm`; a.click();
+            } catch (err) { alert("Error: " + err.message); } 
+            finally { document.getElementById('targetSVG').style.display = 'block'; canvas.style.display = 'none'; status.style.display = 'none'; }
+        }
+    </script>
+</body>
+</html>
