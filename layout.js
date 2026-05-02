@@ -20,6 +20,11 @@ const sidebarArea = `
     <div><strong>Neon Dual Ring</strong><br><small>Kategori: Loader</small></div>
 </a>
 <!-- NANTI KALAU ADA ARTIKEL BARU, TAMBAHKAN LINKNYA DI BAWAH SINI -->
+
+<a href="mejakerjaimmersive.html" class="gallery-item">
+    <div class="thumb" style="background: #2563eb;"></div>
+    <div><strong>Meja Kerja</strong><br><small>Kategori: Efek Visual</small></div>
+</a>
 `;
 
 // 3. FOOTER (SYARAT MUTLAK ADSENSE)
